@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-
+import Disaply from './Display'
 class App extends Component {
-
+  state = {
+    result: '0'
+  }
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1>Deployed to heroku and pushed to git hub</h1>
-        </header>
+        <Disaply result={this.state.result} />
       </div>
     );
   }

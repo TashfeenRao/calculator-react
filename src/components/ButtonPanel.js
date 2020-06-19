@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import Button from './Button';
+import Proptypes from 'prop-types';
 
 class ButtonPanel extends Component {
+    static propTypes = {
+        onClick: Proptypes.func.isRequired
+    }
     render() {
         const { onClick } = this.props
         return(

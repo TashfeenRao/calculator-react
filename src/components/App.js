@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 
+class App extends Component {
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Deployed to heroku and pushed to git hub</h1>
-      </header>
-    </div>
-  );
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <h1>Deployed to heroku and pushed to git hub</h1>
+        </header>
+      </div>
+    );
+  }
 }
 
 export default App;

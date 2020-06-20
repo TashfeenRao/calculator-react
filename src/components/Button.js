@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropsTypes from 'prop-types';
 
 const Button = ({ name, value, onClick }) => (
   <div>
@@ -13,4 +13,9 @@ const Button = ({ name, value, onClick }) => (
     </button>
   </div>
 );
+Button.propTypes = {
+  name: PropsTypes.string.isRequired,
+  value: PropsTypes.string.isRequired,
+  onClick: PropsTypes.func.isRequired,
+}
 export default Button;

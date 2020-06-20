@@ -1,6 +1,6 @@
 /* eslint-disable react/prefer-stateless-function */
-/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
+import PropsTypes from 'prop-types';
 import Button from './Button';
 
 class ButtonPanel extends Component {
@@ -41,4 +41,7 @@ class ButtonPanel extends Component {
     );
   }
 }
+ButtonPanel.propTypes = {
+  onClick: PropsTypes.func.isRequired,
+};
 export default ButtonPanel;

@@ -1,13 +1,16 @@
-import React, { Component } from 'react';
+/* eslint-disable react/prop-types */
+import React from 'react';
 
-class Button extends Component {
-    render() {
-        const { name, value, onClick } = this.props;
-        return(
-            <div>
-                <button name={name} value={value} onClick={onClick}>{value}</button>
-            </div>
-        )
-    }
-}
+const Button = ({ name, value, onClick }) => (
+  <div>
+    <button
+      type="button"
+      name={name}
+      value={value}
+      onClick={onClick}
+    >
+      {value}
+    </button>
+  </div>
+);
 export default Button;

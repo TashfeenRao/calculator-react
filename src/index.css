@@ -44,9 +44,12 @@ code {
 .buttonPanel {
   display: flex;
   flex-direction: column;
-  height: 100px;
 }
 .Group {
   display: flex;
+  height: 100px;
+  flex: 0.25;
+}
+button {
   height: 100px;
 }

@@ -16,8 +16,10 @@ class App extends Component {
     const { result } = this.state;
     return (
       <div className="App">
-        <Disaply result={result} />
-        <ButtonPanel onClick={() => this.handleClick()} />
+        <div className="calculator">
+          <Disaply result={result} />
+          <ButtonPanel onClick={() => this.handleClick()} />
+        </div>
       </div>
     );
   }

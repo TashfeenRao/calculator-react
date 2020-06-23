@@ -28,6 +28,7 @@ code {
 
 .App {
   display: flex;
+  justify-content: center;
 }
 .calculator {
   display: flex;
@@ -39,10 +40,13 @@ code {
   background-color: gray;
   height: 100px;
   color: white;
-  font-size: bold;
+  justify-content: flex-end;
+  font-weight: bold;
+  padding: 5px;
 }
 .buttonPanel {
   display: flex;
+  margin-top: 1px;
   flex-direction: column;
 }
 .Group {
@@ -53,7 +57,16 @@ code {
 button {
   height: 100px;
   width: 175px;
+  border: 1px solid black;
+  background-color: #fd9032;
 }
 button[value='0'] {
   width: 350px;
+}
+button[value='.'] {
+  font-size: 40px;
+}
+button:hover {
+  background-color: #ff7904;
+  cursor: pointer;
 }

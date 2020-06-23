@@ -26,9 +26,13 @@ code {
     monospace;
 }
 
+#root {
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
 .App {
   display: flex;
   justify-content: center;
+  padding: 10px;
 }
 .calculator {
   display: flex;
@@ -57,14 +61,17 @@ code {
 button {
   height: 100px;
   width: 175px;
-  border: 1px solid black;
-  background-color: #fd9032;
+  border: 1px solid gray;
 }
 button[value='0'] {
   width: 350px;
 }
 button[value='.'] {
   font-size: 40px;
+}
+button[value='='],[value='+'], [value='-'], [value='x'], [value='÷'] {
+  background-color: #fd9032;
+  font-size: 20px;
 }
 button:hover {
   background-color: #ff7904;

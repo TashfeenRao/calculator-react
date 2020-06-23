@@ -18,7 +18,7 @@ class ButtonPanel extends Component {
           <Button name="Button" value="7" onClick={onClick} />
           <Button name="Button" value="8" onClick={onClick} />
           <Button name="Button" value="9" onClick={onClick} />
-          <Button name="Button" value="X" onClick={onClick} />
+          <Button name="Button" value="x" onClick={onClick} />
         </div>
         <div className="Group">
           <Button name="Button" value="4" onClick={onClick} />

@@ -52,4 +52,8 @@ code {
 }
 button {
   height: 100px;
+  width: 175px;
+}
+button[value='0'] {
+  width: 350px;
 }

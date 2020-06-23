@@ -32,7 +32,7 @@ class ButtonPanel extends Component {
           <Button name="Button" value="3" onClick={onClick} />
           <Button name="Button" value="+" onClick={onClick} />
         </div>
-        <div className="Group">
+        <div className="Group o-btn">
           <Button name="Button" value="0" onClick={onClick} />
           <Button name="Button" value="." onClick={onClick} />
           <Button name="Button" value="=" onClick={onClick} />

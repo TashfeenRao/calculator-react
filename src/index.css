@@ -29,16 +29,19 @@ code {
 #root {
   background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
 }
+
 .App {
   display: flex;
   justify-content: center;
   padding: 10px;
 }
+
 .calculator {
   display: flex;
   flex-direction: column;
   width: 700px;
 }
+
 .display {
   display: flex;
   background-color: gray;
@@ -48,31 +51,42 @@ code {
   font-weight: bold;
   padding: 5px;
 }
+
 .buttonPanel {
   display: flex;
   margin-top: 1px;
   flex-direction: column;
 }
+
 .Group {
   display: flex;
   height: 100px;
   flex: 0.25;
 }
+
 button {
   height: 100px;
   width: 175px;
   border: 1px solid gray;
 }
+
 button[value='0'] {
   width: 350px;
 }
+
 button[value='.'] {
   font-size: 40px;
 }
-button[value='='],[value='+'], [value='-'], [value='x'], [value='÷'] {
+
+button[value='='],
+[value='+'],
+[value='-'],
+[value='x'],
+[value='÷'] {
   background-color: #fd9032;
   font-size: 20px;
 }
+
 button:hover {
   background-color: #ff7904;
   cursor: pointer;

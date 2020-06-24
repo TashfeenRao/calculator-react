@@ -1,3 +1,4 @@
+/* eslint-disable react/require-default-props */
 import React from 'react';
 import PropsTypes from 'prop-types';
 
@@ -24,7 +25,7 @@ Button.propTypes = {
   name: PropsTypes.string.isRequired,
   value: PropsTypes.string.isRequired,
   onClick: PropsTypes.func.isRequired,
-  wide: PropsTypes.bool.isRequired,
-  color: PropsTypes.string.isRequired,
+  wide: PropsTypes.bool,
+  color: PropsTypes.string,
 };
 export default Button;

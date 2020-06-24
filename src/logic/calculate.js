@@ -24,11 +24,12 @@ const calculate = (data, btnName) => {
       imData.operation = null;
       break;
     case '%':
-      if (imData.total && parseFloat(imData.total) > 0) {
-        imData.total = operate(imData.total, 100, '÷');
-      }
-      if (imData.next && parseFloat(imData.next) > 0) {
-        imData.next = operate(imData.next, 100, '÷');
+    case '+':
+    case '-':
+    case 'x':
+    case '÷':
+      if (imData.total && imData.next && imData.operation) {
+        imData.total = operate(imData.total, imData.next, imData.operation);
       }
       break;
     default:

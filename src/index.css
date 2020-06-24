@@ -66,12 +66,7 @@ code {
 
 button {
   height: 100px;
-  width: 175px;
   border: 1px solid gray;
-}
-
-button[value='0'] {
-  width: 350px;
 }
 
 button[value='.'] {

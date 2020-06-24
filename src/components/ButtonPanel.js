@@ -6,6 +6,7 @@ import Button from './Button';
 class ButtonPanel extends Component {
   render() {
     const { onClick } = this.props;
+    const bool = true;
     return (
       <div className="buttonPanel">
         <div className="Group">
@@ -33,7 +34,7 @@ class ButtonPanel extends Component {
           <Button name="Button" value="+" onClick={onClick} />
         </div>
         <div className="Group o-btn">
-          <Button name="Button" value="0" onClick={onClick} />
+          <Button name="Button" value="0" onClick={onClick} wide={bool} />
           <Button name="Button" value="." onClick={onClick} />
           <Button name="Button" value="=" onClick={onClick} />
         </div>

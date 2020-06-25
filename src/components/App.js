@@ -1,25 +1,29 @@
 /* eslint-disable no-unused-vars */
-/* eslint-disable react/state-in-constructor */
 import React, { Component } from 'react';
 import Disaply from './Display';
 import ButtonPanel from './ButtonPanel';
 import calculate from '../logic/calculate';
 
 class App extends Component {
-  state = {
-    result: '0',
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
+  }
 
   handleClick = () => {
 
   }
 
   render() {
-    const { result } = this.state;
+    const { total, next, operation } = this.state;
     return (
       <div className="App">
         <div className="calculator">
-          <Disaply result={result} />
+          <Disaply total={total} next={next} />
           <ButtonPanel onClick={() => this.handleClick()} />
         </div>
       </div>

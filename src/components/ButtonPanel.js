@@ -15,32 +15,32 @@ class ButtonPanel extends Component {
       <div className="buttonPanel">
         <div className="Group">
           <Button name="AC" value="AC" clickHandler={handleClick} />
-          <Button name="+/-" value="+/-" />
+          <Button name="+/-" value="+/-" clickHandler={handleClick} />
           <Button name="%" value="%" />
-          <Button name="÷" value="÷" color={color} />
+          <Button name="÷" value="÷" color={color} clickHandler={handleClick} />
         </div>
         <div className="Group">
-          <Button name="7" value="7" />
-          <Button name="8" value="8" />
-          <Button name="9" value="9" />
-          <Button name="x" value="x" color={color} />
+          <Button name="7" value="7" clickHandler={handleClick} />
+          <Button name="8" value="8" clickHandler={handleClick} />
+          <Button name="9" value="9" clickHandler={handleClick} />
+          <Button name="x" value="x" clickHandler={handleClick} color={color} />
         </div>
         <div className="Group">
-          <Button name="4" value="4" />
-          <Button name="5" value="5" />
-          <Button name="6" value="6" />
-          <Button name="-" value="-" color={color} />
+          <Button name="4" value="4" clickHandler={handleClick} />
+          <Button name="5" value="5" clickHandler={handleClick} />
+          <Button name="6" value="6" clickHandler={handleClick} />
+          <Button name="-" value="-" clickHandler={handleClick} color={color} />
         </div>
         <div className="Group">
-          <Button name="1" value="1" />
-          <Button name="2" value="2" />
-          <Button name="3" value="3" />
-          <Button name="+" value="+" color={color} />
+          <Button name="1" value="1" clickHandler={handleClick} />
+          <Button name="2" value="2" clickHandler={handleClick} />
+          <Button name="3" value="3" clickHandler={handleClick} />
+          <Button name="+" value="+" clickHandler={handleClick} color={color} />
         </div>
         <div className="Group o-btn">
-          <Button name="0" value="0" wide={bool} />
-          <Button name="." value="." />
-          <Button name="=" value="=" color={color} />
+          <Button name="0" value="0" clickHandler={handleClick} wide={bool} />
+          <Button name="." value="." clickHandler={handleClick} />
+          <Button name="=" value="=" clickHandler={handleClick} color={color} />
         </div>
       </div>
     );

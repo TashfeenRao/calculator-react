@@ -11,20 +11,22 @@ class App extends Component {
       total: null,
       next: null,
       operation: null,
+      result: '0',
     };
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick = btnName => {
-    console.log(btnName);
+    const result = calculate(this.state, btnName);
+    this.setState(result)
   }
 
   render() {
-    const { total, next, operation } = this.state;
+    const { result } = this.state;
     return (
       <div className="App">
         <div className="calculator">
-          <Disaply total={total} next={next} />
+          <Disaply result={result} />
           <ButtonPanel clickHandler={this.handleClick} />
         </div>
       </div>

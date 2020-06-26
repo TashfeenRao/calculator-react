@@ -16,7 +16,7 @@ class ButtonPanel extends Component {
         <div className="Group">
           <Button name="AC" value="AC" clickHandler={handleClick} />
           <Button name="+/-" value="+/-" clickHandler={handleClick} />
-          <Button name="%" value="%" />
+          <Button name="%" value="%" clickHandler={handleClick} />
           <Button name="÷" value="÷" color={color} clickHandler={handleClick} />
         </div>
         <div className="Group">

@@ -17,12 +17,12 @@ class App extends Component {
   }
 
   handleClick = btnName => {
-    const result = calculate(this.state, btnName);
-    this.setState(result)
+    const neData = calculate(this.state, btnName);
+    this.setState(neData);
   }
 
   render() {
-    const { result } = this.state;
+    const { result, operation } = this.state;
     return (
       <div className="App">
         <div className="calculator">

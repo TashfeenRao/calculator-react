@@ -1,7 +1,9 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/state-in-constructor */
 import React, { Component } from 'react';
 import Disaply from './Display';
 import ButtonPanel from './ButtonPanel';
+import calculate from '../logic/calculate';
 
 class App extends Component {
   state = {

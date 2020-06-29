@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    'Courier New',
+    monospace;
+}
+
+#root {
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+}
+
+.display {
+  display: flex;
+  background-color: gray;
+  height: 100px;
+  color: white;
+  justify-content: flex-end;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.buttonPanel {
+  display: flex;
+  margin-top: 1px;
+  flex-direction: column;
+}
+
+.Group {
+  display: flex;
+  height: 100px;
+  flex: 0.25;
+}
+
+button {
+  height: 100px;
+  border: 1px solid gray;
+}
+
+button[value='.'] {
+  font-size: 40px;
+}
+
+button[value='='],
+[value='+'],
+[value='-'],
+[value='x'],
+[value='÷'] {
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: #ff7904;
+  cursor: pointer;
+}

@@ -1,17 +1,23 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/state-in-constructor */
 import React, { Component } from 'react';
 import Disaply from './Display';
 import ButtonPanel from './ButtonPanel';
 import calculate from '../logic/calculate';
 
 class App extends Component {
-  state = {
-    result: '0',
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+      result: '0',
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
 
-  handleClick = () => {
-
+  handleClick = btnName => {
+    const neData = calculate(this.state, btnName);
+    this.setState(neData);
   }
 
   render() {
@@ -20,7 +26,7 @@ class App extends Component {
       <div className="App">
         <div className="calculator">
           <Disaply result={result} />
-          <ButtonPanel onClick={() => this.handleClick()} />
+          <ButtonPanel clickHandler={this.handleClick} />
         </div>
       </div>
     );

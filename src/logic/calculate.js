@@ -1,41 +1,53 @@
 import operate from './operate';
 
 const calculate = (data, btnName) => {
-  const imData = data;
+  let {
+    next, total, result, operation,
+  } = data;
   switch (btnName) {
-    case '1':
-    case '2':
-    case '3':
-    case '4':
-    case '5':
-    case '6':
-    case '7':
-    case '8':
-    case '9':
-      imData.next += btnName;
-      break;
     case '+/-':
-      imData.total *= -1;
-      imData.next *= -1;
+      next *= -1;
+      result = next;
       break;
     case 'AC':
-      imData.total = 0;
-      imData.next = 0;
-      imData.operation = null;
+      total = null;
+      next = null;
+      operation = null;
+      result = '0';
+      break;
+    case '=':
+      if (operation === null) break;
+      next = operate(total, next, operation);
+      total = null;
+      operation = null;
+      result = next.toString();
       break;
     case '%':
     case '+':
     case '-':
     case 'x':
     case '÷':
-      if (imData.total && imData.next && imData.operation) {
-        imData.total = operate(imData.total, imData.next, imData.operation);
+      if (total === null) {
+        total = next;
+        next = null;
+        operation = btnName;
+        break;
+      } else {
+        total = operate(total, next, operation);
+        next = null;
+        result = total.toString();
+        operation = btnName;
       }
       break;
     default:
-      imData.total = operate(...data);
-      imData.next = 0;
-      imData.operation = null;
+      if (next === null) next = '';
+
+      next += btnName;
+      result = next;
+      break;
   }
+  return {
+    next, total, result, operation,
+  };
 };
 export default calculate;

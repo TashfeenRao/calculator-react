@@ -1,8 +1,18 @@
 import bigJs from 'big.js';
 
 const operate = (fNum, sNum, sign) => {
-  const bigFnum = bigJs(fNum);
-  const bigSnum = bigJs(sNum);
+  let bigFnum;
+  let bigSnum;
+  if (fNum === null || sNum === null) {
+    bigFnum = bigJs(0);
+    bigSnum = bigJs(0);
+  } else if (sNum > 0 && sNum !== '.') {
+    bigFnum = bigJs(fNum);
+    bigSnum = bigJs(sNum);
+  } else {
+    return 0;
+  }
+
   switch (sign) {
     case '+':
       return bigFnum.plus(bigSnum);

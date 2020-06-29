@@ -6,9 +6,11 @@ const operate = (fNum, sNum, sign) => {
   if (fNum === null || sNum === null) {
     bigFnum = bigJs(0);
     bigSnum = bigJs(0);
-  } else {
+  } else if (sNum > 0 && sNum !== '.') {
     bigFnum = bigJs(fNum);
     bigSnum = bigJs(sNum);
+  } else {
+    return 0;
   }
 
   switch (sign) {

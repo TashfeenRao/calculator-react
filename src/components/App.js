@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
 import Disaply from './Display';
 import ButtonPanel from './ButtonPanel';
@@ -22,7 +21,7 @@ class App extends Component {
   }
 
   render() {
-    const { result, operation } = this.state;
+    const { result } = this.state;
     return (
       <div className="App">
         <div className="calculator">

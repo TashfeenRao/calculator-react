@@ -5,7 +5,7 @@
   <br>
 </h1>
 
-<h4 align="center">This project a calculator for Math-magicians Incis built using React. Using this app user can perform basic math operations efficiently
+<h4 align="center"> This project a calculator for Math-magicians Inc. It is built using React. Using this app user can perform basic math operations +,-,/,* etc. efficiently.
 </h4>
 </br>
 
@@ -16,7 +16,7 @@
 ![Version](https://img.shields.io/badge/version-1.0.0-green)
 ![Hackage-Deps](https://img.shields.io/hackage-deps/v/json)
 ![Issues](https://img.shields.io/badge/issues-0-green)
-![Twitter Follow](https://img.shields.io/twitter/follow/TashfeenRao2?label=Tashfeen&style=social)
+![Twitter Follow](https://img.shields.io/twitter/follow/TashfeenDev?label=Tashfeen&style=social)
 
 </br>
 
@@ -81,5 +81,7 @@ MIT
 
 ---
 > [Tashfeen Rao](https://tashfeenrao.github.io/personal-portfolio/) &nbsp;&middot;&nbsp;
+> Email [TashfeenDev](tashfeendev@gmail.com)
 > GitHub [TashfeenRao](https://github.com/TashfeenRao) &nbsp;&middot;&nbsp;
-> Twitter [@TashfeenRao2](https://twitter.com/TashfeenRao2)
+> Twitter [@TashfeenDev](https://twitter.com/TashfeenDev)
+> LinkedIn [Tashfeen Rao](https://www.linkedin.com/in/tashfeen-rao/)

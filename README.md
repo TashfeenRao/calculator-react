@@ -80,8 +80,12 @@ This software uses the following open source packages:
 MIT
 
 ---
-> [Tashfeen Rao](https://tashfeenrao.github.io/personal-portfolio/) &nbsp;&middot;&nbsp;
-> Email [TashfeenDev](tashfeendev@gmail.com)
-> GitHub [TashfeenRao](https://github.com/TashfeenRao) &nbsp;&middot;&nbsp;
-> Twitter [@TashfeenDev](https://twitter.com/TashfeenDev)
-> LinkedIn [Tashfeen Rao](https://www.linkedin.com/in/tashfeen-rao/)
+[Tashfeen Rao](https://tashfeenrao.github.io/personal-portfolio/) &nbsp;&middot;&nbsp;
+</br>
+Email: tashfeendev@gmail.com &nbsp;&middot;&nbsp;
+</br>
+AngelList [TashfeenRao](https://angel.co/u/tashfeen-rao) &nbsp;&middot;&nbsp;
+</br>
+LinkedIn [Tashfeen Rao](https://www.linkedin.com/in/tashfeen-rao/) &nbsp;&middot;&nbsp;
+</br>
+Twitter [@TashfeenDev](https://twitter.com/TashfeenDev) &nbsp;&middot;&nbsp;

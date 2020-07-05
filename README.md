@@ -54,7 +54,7 @@ $ npm start
 
 ## Screen Shot
 
-
+![screenshot](calculator.gif)
 ## Live version
 
 https://tashicalculator.herokuapp.com/.

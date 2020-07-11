@@ -1,11 +1,10 @@
-
 <h1 align="center">
   <br>
-    Calculator
+    React Calculator
   <br>
 </h1>
 
-<h4 align="center"> This project a calculator for Math-magicians Inc. It is built using React. Using this app user can perform basic math operations +,-,/,* etc. efficiently.
+<h4 align="center">Implemented Basic functionalities of math calculator. Users can perform basic math operations addition, subtraction multiplication, and division. Built with: React, Javascript, Webpack, Babel, Eslint, GitHub, Heroku.
 </h4>
 </br>
 
@@ -24,26 +23,26 @@
   <a href="#key-features">Key Features</a> •
   <a href="#how-to-use">How To Use</a> •
   <a href="#credits">Credits</a> •
-  <a href="#related">Related</a> •
-  <a href="#license">License</a>
+  <a href="#screen-shot">Screen Shot</a> •
+  <a href="#license">License</a> •
+  <a href="#author">Author</a> •
 </p>
-
 
 ## Key Features
 
 * User can add two numbers
-* User can  subtract two numbers
-* User can multiply two numbers
+* User can subtract two numbers
 * User can divide two numbers
+* User can multiply two numbers
 
 ## How To Use
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/TashfeenRao/calculator-react
+$ git clone https://github.com/TashfeenRao/react-bookstore
 
 # Go into the repository
-$ cd calculator-react
+$ cd react-bookstore
 
 # Install dependencies
 $ npm install
@@ -55,17 +54,18 @@ $ npm start
 ## Screen Shot
 
 ![screenshot](calculator.gif)
+
 ## Live version
 
-https://tashicalculator.herokuapp.com/.
+https://tashicalculator.herokuapp.com/
 
 ## Emailware
 
-Calculator React is an Open source. if you liked using this app or it has helped you in any way, I'd like you send me an email at <raotashfeen25@gmail.com> about anything you'd want to say about this software. I'd really appreciate it!
+Calculator is an Open-source. if you liked using this app or it has helped you in any way, I'd like you to send me an email at <raotashfeen25@gmail.com> about anything you'd want to say about this software. I'd appreciate it!
 
 ## Credits
 
-This software uses the following open source packages:
+This software uses the following open-source packages:
 
 - [React](https://React.org/)
 - [Node.js](https://nodejs.org/)
@@ -79,7 +79,11 @@ This software uses the following open source packages:
 
 MIT
 
+## Author
 ---
+
+<h2>Tashfeen Rao </h2>
+
 Porfolio [Tashfeen Rao](https://tashfeen-rao.netlify.app/) &nbsp;&middot;&nbsp;
 </br>
 Email: tashfeendev@gmail.com &nbsp;&middot;&nbsp;
